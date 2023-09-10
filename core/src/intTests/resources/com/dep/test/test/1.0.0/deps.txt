@@ -1,0 +1,18 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>test</artifactId>
+    <groupId>com.dep.test</groupId>
+    <version>1.0.0</version>
+    <dependencies>
+        <dependency>
+            <groupId>com.dep.test</groupId>
+            <artifactId>mock-dependency1</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dep.test</groupId>
+            <artifactId>mock-dependency2</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+</project>

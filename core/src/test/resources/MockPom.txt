@@ -1,0 +1,23 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>test</artifactId>
+    <groupId>com.codrut.test</groupId>
+    <version>1.0.0</version>
+    <dependencies>
+        <dependency>
+            <groupId>com.codrut.test</groupId>
+            <artifactId>mock-dependency1</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codrut.test</groupId>
+            <artifactId>mock-dependency2</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.codrut.test</groupId>
+            <artifactId>mock-dependency3</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+</project>
