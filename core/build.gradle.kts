@@ -48,8 +48,6 @@ dependencies {
 }
 
 tasks.test {
-    println(testClassesDirs)
-
     useJUnitPlatform()
 }
 
@@ -58,7 +56,6 @@ val intTests = task<Test>("intTests") {
     group = "verification"
 
     testClassesDirs = sourceSets["intTests"].output.classesDirs
-    println(testClassesDirs)
     classpath = sourceSets["intTests"].runtimeClasspath
     mustRunAfter(tasks["test"])
 

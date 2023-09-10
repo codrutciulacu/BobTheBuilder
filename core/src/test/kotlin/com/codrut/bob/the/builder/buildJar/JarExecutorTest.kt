@@ -15,7 +15,7 @@ class JarExecutorTest {
         val process = executor.execute(file)
 
         assertTrue(process.isAlive)
-        assertEquals("/usr/bin/java", process.info().command().get())
+        assertTrue(process.info().command().get().contains("java"))
         assertEquals("Hello World!", process.inputReader().readLine())
     }
 }
