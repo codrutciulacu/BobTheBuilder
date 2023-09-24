@@ -2,9 +2,7 @@ package com.codrut.bob.the.builder.dependencies.maven
 
 import com.codrut.bob.the.builder.dependencies.Dependency
 import com.codrut.bob.the.builder.dependencies.DependencyInfoProvider
-import com.codrut.bob.the.builder.util.buildAsDependencyPath
-import com.codrut.bob.the.builder.util.buildAsUrlPath
-import com.fasterxml.jackson.annotation.JsonProperty
+import com.codrut.bob.the.builder.dependencies.util.buildAsUrlPath
 import com.fasterxml.jackson.dataformat.xml.XmlMapper
 import io.ktor.client.HttpClient
 import io.ktor.client.request.get
@@ -18,7 +16,7 @@ class MavenDependencyInfoProvider(
     private val mavenRepoUrl: String
 ) : DependencyInfoProvider {
 
-    override suspend fun getDependency(dependencyName: String): Dependency {
+    override suspend fun getDependencyInfo(dependencyName: String): Dependency {
         val dependency = coroutineScope {
             val splittedDependencyName = dependencyName.split(":")
             val response = async {

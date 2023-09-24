@@ -1,7 +1,7 @@
 package com.codrut.bob.the.builder.dependencies.maven
 
 import com.codrut.bob.the.builder.dependencies.Dependency
-import com.codrut.bob.the.builder.util.buildAsDependencyPath
+import com.codrut.bob.the.builder.dependencies.util.buildAsDependencyPath
 import com.fasterxml.jackson.annotation.JsonProperty
 
 data class POMEntity(
@@ -11,7 +11,7 @@ data class POMEntity(
     val artifactId: String?,
     @JsonProperty("version")
     val version: String?,
-    @JsonProperty("dependencies")
+    @JsonProperty("com/codrut/bob/the/builder/dependencies")
     val dependencies: List<POMEntity>?
 ) {
     fun mapPomToGenericDependency(): Dependency =

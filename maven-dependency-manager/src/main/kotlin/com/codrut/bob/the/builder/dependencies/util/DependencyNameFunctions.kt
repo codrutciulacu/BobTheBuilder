@@ -1,4 +1,4 @@
-package com.codrut.bob.the.builder.util
+package com.codrut.bob.the.builder.dependencies.util
 
 import com.codrut.bob.the.builder.dependencies.maven.POMEntity
 

@@ -11,6 +11,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/dependency-server" />
+            <option value="$PROJECT_DIR$/local-dependency-manager" />
+            <option value="$PROJECT_DIR$/maven-dependency-manager" />
           </set>
         </option>
       </GradleProjectSettings>

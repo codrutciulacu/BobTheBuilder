@@ -46,8 +46,7 @@ class MavenDependencyInfoProviderTest {
         test { client: HttpClient ->
             val dependencyInfoProvider = MavenDependencyInfoProvider(client, xmlMapper, "https://test.com")
 
-
-            val dependency = dependencyInfoProvider.getDependency("com.codrut.test:test:1.0.0")
+            val dependency = dependencyInfoProvider.getDependencyInfo("com.codrut.test:test:1.0.0")
 
             assertEquals("test", dependency.name)
             assertEquals("com.codrut.test:test:1.0.0", dependency.path)

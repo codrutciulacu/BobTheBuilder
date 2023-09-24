@@ -4,3 +4,5 @@ plugins {
 rootProject.name = "BobTheBuilder"
 include("core")
 include("dependency-server")
+include("local-dependency-manager")
+include("maven-dependency-manager")

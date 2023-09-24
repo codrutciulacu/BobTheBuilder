@@ -7,7 +7,7 @@ class DependencyGraphBuilder(
     val dependencyInfoProvider: DependencyInfoProvider
 ) {
     suspend fun build(dependencyName: String): Node {
-        val dependency = dependencyInfoProvider.getDependency(dependencyName)
+        val dependency = dependencyInfoProvider.getDependencyInfo(dependencyName)
 
         return Node(
             id = UUID.randomUUID(),

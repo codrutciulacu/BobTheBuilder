@@ -8,18 +8,15 @@ import com.codrut.bob.the.builder.utils.Commons.depC
 import com.codrut.bob.the.builder.utils.Commons.depD
 import com.codrut.bob.the.builder.utils.Commons.depE
 import com.codrut.bob.the.builder.utils.Commons.simpleGraph
-import java.util.Stack
 import java.util.UUID
 import javax.naming.directory.InvalidAttributesException
 import kotlinx.coroutines.runBlocking
-import org.junit.jupiter.api.AssertionFailureBuilder
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertTrue
-import org.junit.jupiter.api.Assertions.fail
 import org.junit.jupiter.api.Test
 
 class FakeDependencyInfoProvider : DependencyInfoProvider {
-    override suspend fun getDependency(dependencyName: String): Dependency = when (dependencyName) {
+    override suspend fun getDependencyInfo(dependencyName: String): Dependency = when (dependencyName) {
         "depA" -> depA
         "depB" -> depB
         "depC" -> depC
